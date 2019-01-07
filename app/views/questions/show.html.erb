@@ -37,6 +37,15 @@
             </div>
           </li>
         <% end %>
+
+        <% if @answers.empty? %>
+          <div class="alert alert-info text-center">
+            <h3>No answers yet <br><small class="secondary">¯\_(ツ)_/¯</small></h3>
+
+            <button role="button" class="btn btn-success" data-toggle="modal" data-target="#new-answer-modal">Submit New Answer</button>
+          </div>
+        <% end %>
+
       </ul>
     </div>
   </div>
